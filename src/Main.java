@@ -32,7 +32,7 @@ public class Main {
        int nrB = 3;
        System.out.println(nrA % nrB);
 
-       System.out.println((double)(9 / 4));
+       System.out.println((double)(9 / 4f));
 
        String concluzie = "Nu inteleg de ce nu imi afiseaza numar cu mai multe zecimale la rezultat daca aleg variabila double.";
        System.out.println(concluzie);
