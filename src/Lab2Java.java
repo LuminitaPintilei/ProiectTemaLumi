@@ -7,6 +7,8 @@ public class Lab2Java {
         Calculator calc = new Calculator();
         Print printModel = new Print();
 
+
+
         double result = calc.sum(x,z);
         double substractResult = calc.substract(x,z);
         double divisionResult = calc.division(x,z);
