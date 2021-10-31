@@ -73,6 +73,15 @@ public class Calculator {
 
     }
 
+    public static void DoStuff(int u){
+
+        int v = 7;
+        int DoStuff = v + 1;
+
+        System.out.println(DoStuff);
+
+    }
+
 }
 
 
