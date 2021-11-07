@@ -34,7 +34,7 @@ public class Calculator {
 
     }
 
-    public static void printMySum() {
+    public void printMySum() {
 
         float printMySum = x + y;
 
@@ -42,7 +42,7 @@ public class Calculator {
 
     }
 
-    public static void printMyDivision() {
+    public void printMyDivision() {
 
         float printMyDivision = x / y;
 
@@ -50,7 +50,7 @@ public class Calculator {
 
     }
 
-    public static void printMyResult() {
+    public void printMyResult() {
 
         float printMyResult = -5 + 8 * 6;
 
@@ -58,7 +58,7 @@ public class Calculator {
 
     }
 
-    public static void printMyModulo() {
+    public void printMyModulo() {
 
         float printMyModulo = z % x;
 
@@ -66,14 +66,14 @@ public class Calculator {
 
     }
 
-    public static void printMyAverage(float first, float second, float third) {
+    public void printMyAverage(float first, float second, float third) {
 
         float printMyAverage = ((first + second + third) / 3);
         System.out.println(printMyAverage);
 
     }
 
-    public static void DoStuff(int u){
+    public void DoStuff(int u){
 
         int v = 7;
         int DoStuff = v + 1;

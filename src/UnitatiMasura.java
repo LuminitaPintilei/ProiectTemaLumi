@@ -1,13 +1,13 @@
 public class UnitatiMasura {
 
-    public static void printMyCelsius(float Fahrenheit) {
+    public void printMyCelsius(float Fahrenheit) {
 
         float printMyCelsius = ((Fahrenheit - 32) * 5 / 9);
         System.out.println("Temperatura este" + " " + printMyCelsius + " " + "grade Celsius" );
 
     }
 
-    public static void printMyMeters(float Inch) {
+    public void printMyMeters(float Inch) {
 
         double printMyMeters = (Inch * 0.0254);
 
@@ -15,7 +15,7 @@ public class UnitatiMasura {
 
     }
 
-    public static void printMySpeed(float d, int h, int m, int s) {
+    public void printMySpeed(float d, int h, int m, int s) {
         float t = ((h * 3600 + m * 60 + s));
         float printMySpeed = d / t;
         System.out.println(" Viteza este " + printMySpeed + " " + " metri pe secunda" );

@@ -8,7 +8,6 @@ public class Main {
         Calculator calc = new Calculator();
 
 
-
         print.printModel();
         print.printMyModelJava();
         print.model();
@@ -26,6 +25,12 @@ public class Main {
         calc.DoStuff(1);
         calc.DoStuff(1);
         calc.DoStuff(5);
+
+
+
+
+
+
 
 
 
