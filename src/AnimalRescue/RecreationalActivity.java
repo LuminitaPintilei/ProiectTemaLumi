@@ -1,6 +1,6 @@
 package AnimalRescue;
 
-public class DogActivities {
+public class RecreationalActivity {
 
     public void eat(){
         System.out.println("Eating..");

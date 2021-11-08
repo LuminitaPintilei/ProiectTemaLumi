@@ -93,7 +93,7 @@ public class LogicalNewOperations {
 // Apelati metoda in main() pentru a verifica daca functioneaza.
 
 
-    public String pickNumber( int pickNumber) {
+    public String pickNumber(int pickNumber) {
 
         switch (pickNumber) {
             case 1:
@@ -115,12 +115,11 @@ public class LogicalNewOperations {
 // iar daca e impar sa returnese false.
 // Apelati metoda in main() pentru a verifica daca functioneaza.
 
-    public String isNumberEven (int isNumberEven) {
+    public String isNumberEven(int isNumberEven) {
 
-        if(isNumberEven % 2 == 0) {
+        if (isNumberEven % 2 == 0) {
             return ("true");
-        }
-        else return("false");
+        } else return ("false");
     }
 
     //10. Creati o metoda care sa se numeasca isEligibleToVote.
@@ -129,35 +128,72 @@ public class LogicalNewOperations {
     // Daca varsta e peste 18, sa se returneze true iar daca nu, sa returneze false.
     // Apelati metoda in main() pentru a verifica daca functioneaza.
 
-    public String isEligibleToVote (int age){
-        if( age >= 18) {
+    public String isEligibleToVote(int age) {
+        if (age >= 18) {
             return ("Are drept de vot.");
-        }
-        else
+        } else
             return ("Fara drept de vot.");
-        }
+    }
 
-    public int biggerNumber (int first, int second, int third) {
+    public int biggerNumber(int first, int second, int third) {
 
-        if( (first > second) && (first > third)){
-            return(first);
+        if ((first > second) && (first > third)) {
+            return (first);
 
-        }
-        else if ((second > first) && (second > third)){
-            return(second);
-        }
-        else if ((third > first) && (third > second)){
-            return(third);
+        } else if ((second > first) && (second > third)) {
+            return (second);
+        } else if ((third > first) && (third > second)) {
+            return (third);
         }
 
 
         return first;
     }
 
-
+    public void countBackwards(int small, int big) {
+        for (int i = big; i >= small; i--) {
+            System.out.println(i);
+        }
 
 
     }
+
+    public float getAverageFromInterval(int start, int max){
+        float sum = 0;
+        for(int i = start; i <=max; i++ ){
+            sum = i+sum;
+        }
+        return (sum / max - start + 1);
+    }
+
+    public float getAverageDivisibleBySeven(int start, int max) {
+        int x = start;
+        float sum = 0;
+        int count = 0;
+        while (x<=max) {
+            if(x % 7 == 0) {
+                sum += x; // sum = sum + x;
+                count++;
+
+            }
+            x++;
+
+        }
+        return sum / count;
+
+    }
+
+    //Given a number, while the number is equal to or lower than 100, print the number;
+
+    public void givenNumber(int start, int max){
+        int x = start;
+        max = 0;
+        while (x <= 100){
+            System.out.println(x);
+        }
+    }
+
+}
 
 
 
