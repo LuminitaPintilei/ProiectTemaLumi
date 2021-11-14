@@ -185,15 +185,19 @@ public class LogicalNewOperations {
 
     //Given a number, while the number is equal to or lower than 100, print the number;
 
-    public void givenNumber(int start, int max){
+    public int givenNumber(int start, int max){
         int x = start;
-        max = 0;
+        max = 100;
         while (x <= 100){
             System.out.println(x);
         }
+        return x;
     }
 
+
 }
+
+
 
 
 
