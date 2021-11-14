@@ -15,6 +15,18 @@ public class TemaMainLoopOps {
         op.tipar(7);
         op.tipar2(1);
 
+        op.numbers();
+        op.newNumbers();
+        op.Count();
+        op.count(10, 3);
+        op.count(18, 20);
+        op.oneToHundred();
+        op.oneToHundredOdd();
+       // op.average();
+       // op.SevenNumbers(1, 63);
+        op.Coza
+
+
 
 
 
