@@ -13,7 +13,7 @@ public class TemaMainLoopOps {
         op.sum();
         op.averageSum();
         op.tipar(7);
-        op.tipar2(1);
+        op.tipar2();
 
         op.numbers();
         op.newNumbers();
@@ -22,9 +22,11 @@ public class TemaMainLoopOps {
         op.count(18, 20);
         op.oneToHundred();
         op.oneToHundredOdd();
-       // op.average();
-       // op.SevenNumbers(1, 63);
-        op.Coza
+       op.sumAndAverageWhile();
+       op.divideBySevenWhile(8, 239);
+        op.fibonacci();
+        op.wozaCozaLoza();
+
 
 
 

@@ -1,5 +1,4 @@
 public class LogicalNewOperations {
-
     public int checkBiggerNumber(int first, int second) {
 
         if (first > second) {
@@ -158,10 +157,10 @@ public class LogicalNewOperations {
 
     }
 
-    public float getAverageFromInterval(int start, int max){
+    public float getAverageFromInterval(int start, int max) {
         float sum = 0;
-        for(int i = start; i <=max; i++ ){
-            sum = i+sum;
+        for (int i = start; i <= max; i++) {
+            sum = i + sum;
         }
         return (sum / max - start + 1);
     }
@@ -170,8 +169,8 @@ public class LogicalNewOperations {
         int x = start;
         float sum = 0;
         int count = 0;
-        while (x<=max) {
-            if(x % 7 == 0) {
+        while (x <= max) {
+            if (x % 7 == 0) {
                 sum += x; // sum = sum + x;
                 count++;
 
@@ -185,17 +184,164 @@ public class LogicalNewOperations {
 
     //Given a number, while the number is equal to or lower than 100, print the number;
 
-    public int givenNumber(int start, int max){
+    public int givenNumber(int start, int max) {
         int x = start;
         max = 100;
-        while (x <= 100){
+        while (x <= 100) {
             System.out.println(x);
         }
         return x;
     }
+//2.  In clasa LogicalOp, creati o metoda care sa scrie pe un array de 100 de pozitii,
+// valorile de la 1 la 100. Sa se afiseze progresul in consola pe tot parcursul.
+// Apelati metoda in main() pentru a verifica daca functioneaza.
+
+    public int[] populateArray(int max) {
+        int[] myArr = new int[max];
+        for (int i = 0; i < max; i++) {
+            myArr[i] = i + 1;
+        }
+        return myArr;
+    }
+
+    public void printArray(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            System.out.println(array[i]);
+        }
+    }
+
+    public void printArray(String[] array) {
+        for (int i = 0; i < array.length; i++) {
+            System.out.println(array[i]);
+        }
+    }
+
+    //public static void printArray(Dog[] array){
+    //for (int i = 0; i < array.length; i++){
+    // System.out.println(array[i].getName());
+    //}
+    //}
+
+    public float getAverageValueFromArray(int[] array) {
+        float sum = 0;
+
+        for (int i = 0; i < array.length; i++) {
+            sum = sum + array[i];
+        }
+        return (sum / array.length);
+    }
+
+    public boolean isValueInArray(int[] array, int value) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == value) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+//3. Creati o metoda care primeasca un parametru de tip array de numere intregi gol,
+// si sa il returneze populat cu toate valorile pare de la 1 la 100.
+// Apelati metoda in main() pentru a verifica daca functioneaza. A
+// tentie, metoda returneaza un array, deci acesta va trebui surprins si afisat folosind o bucla.
+
+//7. Creati o metoda care sa afiseze urmatoarea grila, folosind un array:
+
+    public void grilaArray() {
+        int[][] a = new int[10][10];
+        for (int i = 0; i < 10; i++) {
+            for (int j = 0; j < 10; j++) {
+                System.out.printf("- ", a[i][j]);
+            }
+            System.out.println();
+
+        }
+
+    }
+
+    //Creati o metoda care sa primeasca un parametru de tip array de numere,
+    // populat cu valori, si un parametru de tip numar. Metoda sa
+    // verifice daca numarul primit se afla in array-ul primit, si daca da, atunci
+    // sa returneze pozitia pe care se afla numarul.
+    // Apelati metoda in main() pentru a verifica daca functioneaza.
+
+    public boolean contains(int[] arr, int item) {
+        for (int n : arr) {
+            if (item == n) {
+                return true;
+            }
+            System.out.println(arr);
+        }
+        return false;
+    }
 
 
+    public int[] itemArray() {
+        int[] my_array1 = {
+                17, 20, 18, 56, 2013,
+                158, 2458, 14, 142, 235,
+                156, 265, 149, 246};
+        return my_array1;
+    }
+
+    //9. Creati o metoda care sa primeasca un array,
+    // si sa returneze al doilea cel mai mic numar din array.
+    //Apelati metoda in main() pentru a verifica daca functioneaza.
+
+    public int[] verifyArray() {
+
+        int[] my_array2 = {
+                4, 78, 5, 67, 23, 13};
+        return my_array2;
+
+    }
+
+    static int max;
+    static int min;
+
+    public int max_min(int my_array[]) {
+        max = my_array[0];
+        min = my_array[0];
+        int len = my_array.length;
+        for (int i = 1; i < len - 1; i = i + 2) {
+            if (i + 1 > len) {
+                if (my_array[i] > max) max = my_array[i];
+                if (my_array[i] < min) min = my_array[i];
+            }
+            if (my_array[i] > my_array[i + 1]) {
+                if (my_array[i] > max) max = my_array[i];
+                if (my_array[i + 1] < min) min = my_array[i + 1];
+            }
+            if (my_array[i] < my_array[i + 1]) {
+                if (my_array[i] < min) min = my_array[i];
+                if (my_array[i + 1] > max) max = my_array[i + 1];
+            }
+
+
+        }
+        return min;
+
+    }
 }
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
 
 
 
