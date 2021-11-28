@@ -1,6 +1,6 @@
 package AnimalRescue;
 
-public class Rescuer {
+public abstract class Rescuer {
 
     private String nameGirl;
 

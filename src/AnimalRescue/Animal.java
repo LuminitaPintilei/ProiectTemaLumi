@@ -1,6 +1,8 @@
 package AnimalRescue;
 
-public class Animal {
+import java.lang.constant.Constable;
+
+public abstract class Animal {
 
     private String breed ;
 
@@ -89,6 +91,15 @@ public class Animal {
     public void setHappiness(int happiness){
         this.happiness = happiness;
     }
+    public abstract void speak();
+    public abstract void eat();
+    public abstract void play();
+    public abstract void sleep();
 
 
-}
+
+
+    }
+
+
+
