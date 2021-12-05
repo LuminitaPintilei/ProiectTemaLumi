@@ -101,6 +101,11 @@ public class Calculator {
 
     }
 
+    public int average(int first, int second, int third) {
+        int result = (first + second + third)/3;
+        return result;
+    }
+
     public void printMySum() {
 
         float printMySum = x + y;

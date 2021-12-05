@@ -4,6 +4,9 @@ public class ProgramJavaMain {
         Login login = new Login();
         if (login.loginSuccessful()) {
             ps.runProgram();
+            ps.runMathProgram();
+            ps.runLogicalProgram();
+            ps.runConversionProgram();
         }
     }
 }
