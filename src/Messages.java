@@ -26,6 +26,7 @@ public class Messages {
     public static final String TEMPERATURE = "Write your Fahrenheit temperature";
     public static final String METERS = "Write length in inch:";
     public static final String SPEED = "Write distance in meters and time in hour, minutes and seconds:";
+    public static final String WRONGUSER = "The USER doesn't exist -";
 
 
 
